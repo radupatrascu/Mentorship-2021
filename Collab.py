@@ -1,8 +1,8 @@
-//Hello
+#Hello
 
 
-//Ex.1 Printeaza Alexandru
+#Ex.1 Printeaza Alexandru
 
 
 
-//ex.2 Calculeaza 1 + 3
+#ex.2 Calculeaza 1 + 3
