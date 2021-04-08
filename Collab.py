@@ -9,7 +9,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Fixing random state for reproducibility
+# Fixing random state for reproducibility*
+'''
 np.random.seed(19680801)
 
 
@@ -29,5 +30,43 @@ theta = np.arange(0, np.pi / 2, 0.01)
 plt.plot(r0 * np.cos(theta), r0 * np.sin(theta))
 
 plt.show()
+'''
 
 #Bun de tot!!
+
+
+
+#Se dau 3 sonde 1, 2, 3
+
+# adancimi
+
+AdSonde = [1000, 2000, 3000] # m
+DensitateFluide = [1200, 800, 450] #kg/m3
+
+
+
+# Presiunea hidrostatica = densitate * adancimea * accelartia -> Pa
+
+def Hidrostatica(adSonda, densitate):
+    """
+    Calculeaza densitatea fluidului din sonda
+    """
+    accelartiaGrav = 9.8 #m/s2
+    dens = adSonda * densitate * accelartiaGrav
+
+    return dens
+
+
+for (adancime, densitate) in zip(AdSonde,DensitateFluide):
+    i=1
+    press = Hidrostatica(adancime,densitate)/100000
+    print("Pentru sonda 1, presiunea este de {press}")
+
+
+
+## To do
+'''
+1. Printezi raspunsul astfel:
+
+"Pentru sonda 1, presiunea este de 133 bar. "
+'''
