@@ -29,3 +29,5 @@ theta = np.arange(0, np.pi / 2, 0.01)
 plt.plot(r0 * np.cos(theta), r0 * np.sin(theta))
 
 plt.show()
+
+#Bun de tot!!
